@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import Section from "./Components/Section";
+import Css from "./Components/Css";
+import Html from "./Components/Html";
+import Js from "./Components/Js";
+import Dom from "./Components/Dom";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <header></header>
+      <div className="heading">
+        <h3>25 Questions Completed out of 25</h3>
+        <div className="completed">
+          <p>100%</p>
+        </div>
+      </div>
+      <main>
+        <Css name="HTML" />
+        <Html name="CSS" />
+        <Js name="JavaScript" />
+        <Dom name="DOM Manipulation" />
+      </main>
     </div>
   );
 }
